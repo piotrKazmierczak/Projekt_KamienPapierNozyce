@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="495.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kamienpapiernozyce.FXMLDocumentController">
+   <children>
+      <Label layoutX="257.0" layoutY="33.0" text="Wybierz strategie komputera:" />
+      <ComboBox fx:id="comboStrategie" layoutX="442.0" layoutY="29.0" onAction="#handleComboChanged" prefWidth="150.0" />
+      <Label layoutX="111.0" layoutY="100.0" text="Gracz">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelScoreGracz" layoutX="238.0" layoutY="100.0" text="0">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="413.0" layoutY="100.0" text="Komputer">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelScoreKomputer" layoutX="358.0" layoutY="100.0" text="0">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="288.0" layoutY="100.0" text="  :  ">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonKamien" disable="true" layoutX="186.0" layoutY="177.0" mnemonicParsing="false" onAction="#handleButtonKamien" text="Kamień" />
+      <Button fx:id="buttonPapier" disable="true" layoutX="286.0" layoutY="177.0" mnemonicParsing="false" onAction="#handleButtonPapier" text="Papier" />
+      <Button fx:id="buttonNozyce" disable="true" layoutX="387.0" layoutY="177.0" mnemonicParsing="false" onAction="#handleButtonNozyce" text="Nożyce" />
+      <TextArea fx:id="logArea" layoutX="94.0" layoutY="227.0" prefHeight="254.0" prefWidth="435.0" />
+      <Button fx:id="buttonReset" disable="true" layoutX="41.0" layoutY="29.0" mnemonicParsing="false" onAction="#handleButtonReset" text="Zresetuj wynik" />
+   </children>
+</AnchorPane>
